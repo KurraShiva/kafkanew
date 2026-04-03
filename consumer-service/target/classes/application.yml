@@ -1,0 +1,31 @@
+
+spring:
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      booking-group: booking-consumer-group
+      analytics-group: analytics-consumer-group
+      dashboard-group: dashboard-consumer-group
+      notification-group: notification-consumer-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      max-poll-records: 10
+
+    listener:
+      ack-mode: MANUAL_IMMEDIATE
+
+kafka:
+  topic:
+    booking-events: booking-events
+    dashboard-events: dashboard-events
+    notification-events: notification-events
+
+logging:
+  level:
+    com.realtime: DEBUG
+    org.apache.kafka: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

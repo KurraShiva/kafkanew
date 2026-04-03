@@ -1,0 +1,8 @@
+com/realtime/producer/dto/NotificationEvent.class
+com/realtime/producer/controller/NotificationController.class
+com/realtime/producer/controller/DashboardController.class
+com/realtime/producer/service/DashboardProducer.class
+com/realtime/producer/dto/DashboardEvent$DashboardEventBuilder.class
+com/realtime/producer/dto/DashboardEvent.class
+com/realtime/producer/service/NotificationProducer.class
+com/realtime/producer/dto/NotificationEvent$NotificationEventBuilder.class

@@ -1,0 +1,52 @@
+.stats-card {
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+}
+
+.stats-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.stats-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.stats-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stats-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stats-value {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.stats-trend {
+  font-size: 0.72rem;
+  font-weight: 600;
+  opacity: 0.85;
+}

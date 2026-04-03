@@ -1,0 +1,154 @@
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table th {
+  text-align: left;
+  padding: 12px 12px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+}
+
+.booking-table td {
+  padding: 12px 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.table-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+}
+
+.empty-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.empty-sub {
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.id-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.customer-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.sport-cell {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.venue-cell {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.duration-badge {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+.amount-cell {
+  font-weight: 700;
+  color: var(--accent-green);
+  font-size: 0.85rem;
+}
+
+.created-at {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+@keyframes newRowFlash {
+  0% { background: rgba(16, 185, 129, 0.25); }
+  100% { background: transparent; }
+}
+
+tr.new-row-highlight td {
+  animation: newRowFlash 3s ease-out forwards;
+}
+
+.status-dropdown {
+  position: relative;
+}
+
+.status-btn {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  gap: 4px;
+}
+
+.status-btn .dropdown-arrow {
+  font-size: 0.6rem;
+  margin-left: 4px;
+}
+
+.status-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  min-width: 130px;
+  overflow: hidden;
+}
+
+.status-option {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.2s;
+}
+
+.status-option:hover {
+  background: var(--bg-secondary);
+}
+
+.status-option.active {
+  background: var(--accent-blue);
+  color: white;
+}

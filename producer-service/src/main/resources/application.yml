@@ -1,0 +1,31 @@
+#
+#spring:
+#
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      acks: all
+#      retries: 3
+#      properties:
+#        enable.idempotence: true
+#        max.in.flight.requests.per.connection: 5
+#        linger.ms: 10
+#        buffer.memory: 33554432
+#        compression.type: snappy
+#
+#kafka:
+#  topic:
+#    booking-events: booking-events
+#    dashboard-events: dashboard-events
+#    notification-events: notification-events
+#  producer:
+#    group-id: producer-service
+#
+#logging:
+#  level:
+#    com.realtime: DEBUG
+#    org.apache.kafka: WARN
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

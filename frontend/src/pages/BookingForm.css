@@ -1,0 +1,366 @@
+/* .booking-form-page {
+  padding-bottom: 3rem;
+}
+
+.booking-form-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .booking-form-layout {
+    grid-template-columns: 1fr;
+  }
+  .form-right-panel { order: -1; }
+}
+
+.booking-form-card {
+  background: var(--bg-card);
+}
+
+.form-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-card-icon {
+  font-size: 2rem;
+}
+
+.form-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.form-card-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.form-card-sub code {
+  background: var(--bg-secondary);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--accent-orange);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.form-right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.submitted-card {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.submitted-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.submitted-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-green);
+}
+
+.submitted-header p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.submitted-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.submitted-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.submitted-row span:first-child {
+  color: var(--text-muted);
+}
+
+.submitted-row strong {
+  color: var(--text-primary);
+}
+
+.kafka-info-card {
+  background: var(--bg-card);
+}
+
+.kafka-info-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.kafka-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.kafka-steps li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.step-num {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.kafka-steps li div strong {
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.kafka-steps li div p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.kafka-steps li div p code {
+  color: var(--accent-orange);
+  background: var(--bg-secondary);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+}
+
+
+
+.payment-info {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.payment-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--accent-blue);
+}
+
+.payment-icon {
+  font-size: 1rem;
+}
+
+.payment-summary-card {
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+}
+
+.payment-summary-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.payment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.payment-row span:first-child {
+  color: var(--text-muted);
+}
+
+.payment-row strong {
+  color: var(--text-primary);
+}
+
+.payment-row.total {
+  border-bottom: none;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.payment-row.total strong {
+  color: var(--accent-green);
+  font-size: 1.1rem;
+} */
+
+
+
+.booking-form-page {
+  padding-bottom: 3rem;
+}
+
+.booking-form-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .booking-form-layout {
+    grid-template-columns: 1fr;
+  }
+  .form-right-panel { order: -1; }
+}
+
+.booking-form-card {
+  background: var(--bg-card);
+}
+
+.form-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-card-icon { font-size: 2rem; }
+.form-card-title { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px; }
+.form-card-sub { font-size: 0.8rem; color: var(--text-muted); }
+.form-card-sub code { background: var(--bg-secondary); padding: 1px 6px; border-radius: 4px; font-size: 0.75rem; color: var(--accent-orange); }
+
+.booking-form { display: flex; flex-direction: column; gap: 1rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+.form-group { display: flex; flex-direction: column; }
+.form-actions { display: flex; gap: 0.75rem; justify-content: flex-end; margin-top: 0.5rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.form-right-panel { display: flex; flex-direction: column; gap: 1rem; }
+
+/* Payment Layout */
+.payment-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+@media (max-width: 960px) { .payment-layout { grid-template-columns: 1fr; } }
+
+.payment-form-card { background: var(--bg-card); }
+.payment-header { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+.back-btn { background: transparent; border: none; color: var(--accent-blue); cursor: pointer; font-size: 0.85rem; margin-bottom: 1rem; display: inline-flex; align-items: center; gap: 0.3rem; padding: 0; }
+.back-btn:hover { text-decoration: underline; }
+
+.stripe-payment-form { display: flex; flex-direction: column; gap: 1.5rem; }
+.payment-details-summary { background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 1rem; }
+.payment-details-summary h4 { font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-primary); }
+.summary-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+.summary-row span:first-child { color: var(--text-muted); }
+.summary-row strong { color: var(--text-primary); }
+.summary-row.total { border-bottom: none; padding-top: 0.5rem; font-weight: 700; font-size: 1rem; }
+.summary-row.total strong { color: var(--accent-green); font-size: 1.1rem; }
+
+.card-element-wrapper { margin: 0.5rem 0; }
+.card-element-container { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.75rem; transition: all 0.2s; }
+.card-element-container:focus-within { border-color: var(--accent-blue); box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
+.card-hint { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.5rem; }
+.pay-btn { width: 100%; padding: 0.875rem; font-size: 1rem; font-weight: 700; background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); }
+.pay-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.booking-summary-card { background: var(--bg-card); height: fit-content; }
+.booking-summary-card h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+.summary-details { display: flex; flex-direction: column; gap: 0.75rem; }
+.summary-item { display: flex; justify-content: space-between; font-size: 0.8rem; }
+.summary-item span:first-child { color: var(--text-muted); }
+.summary-item strong { color: var(--text-primary); text-align: right; max-width: 60%; }
+
+.payment-info-card { background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); border: 1px solid rgba(59, 130, 246, 0.3); }
+.payment-info-title { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent-blue); }
+.payment-info-card p { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem; }
+.payment-icons { display: flex; gap: 0.75rem; font-size: 0.75rem; color: var(--text-muted); }
+.payment-icons span { background: var(--bg-secondary); padding: 0.2rem 0.5rem; border-radius: 4px; }
+
+.kafka-info-card { background: var(--bg-card); }
+.kafka-info-title { font-size: 0.9rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem; }
+.kafka-steps { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; }
+.kafka-steps li { display: flex; gap: 0.75rem; align-items: flex-start; }
+.step-num { width: 22px; height: 22px; min-width: 22px; border-radius: 50%; background: var(--accent-blue); color: #fff; font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+.kafka-steps li div strong { font-size: 0.82rem; color: var(--text-primary); display: block; margin-bottom: 2px; }
+.kafka-steps li div p { font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
+
+.payment-loading { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; gap: 1rem; color: var(--text-muted); }
+.spinner { width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent-blue); border-radius: 50%; animation: spin 0.6s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
